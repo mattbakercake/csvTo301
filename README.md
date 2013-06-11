@@ -7,9 +7,9 @@ A nice simple little perl helper script that parses a CSV file with two colums -
 
 collect the existing relative url e.g. /aboutus.htm and the relative destination link e.g. /about
 
-** Note: ** the mod_alias module will ignore 301 redirects that have a querystring appended to the url that is being redirected e.g. *http://www.baseurl.com/news?article=12*.  For urls with this structure mod_rewrite  will have to be used to redirect i.e. links produced by this script won't be effective!
+*Note: the mod_alias module will ignore 301 redirects that have a querystring appended to the url that is being redirected e.g. http://www.baseurl.com/news?article=12.  For urls with this structure mod_rewrite  will have to be used to redirect i.e. links produced by this script won't be effective!
 
-** Note 2: ** v0.1 doesn't sort the output
+*Note 2:  v0.1 doesn't sort the output
 
 Requirements
 -----------------
@@ -19,7 +19,7 @@ Text::CSV cpan module (type "cpan Text::CSV" into terminal window to install)
 
 Usage
 --------
- perl csvto301.pl "**/path/to/csvfile.csv**" "**/path/for/output.txt**" "**http(s)://baseurl of destination**"
+ perl csvto301.pl "/path/to/csvfile.csv" "/path/for/output.txt" "http(s)://baseurl of destination"
  
 	perl csvto301.pl "data.csv" "output.txt" "http://www.website.com"
  
