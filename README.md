@@ -26,5 +26,6 @@ Usage
  Example of output to output.txt
  ------------------------------------
  
- Redirect 301 /home.htm http://baseurl/home\l\n
+ Redirect 301 /home.htm http://baseurl/home
+ 
  Redirect 301 /aboutus.htm http://baseurl/about
